@@ -1,4 +1,5 @@
 var os = require('os');
+var OSinfo = require('../modules/OSInfo');
 
 process.stdin.setEncoding('utf-8');
 process.stdin.on('readable', function() {
@@ -7,7 +8,7 @@ process.stdin.on('readable', function() {
         var instruction = input.trim();
         switch(instruction) {
             case '/exit':
-                process.stdout.write('Quitting app!\n'');
+                process.stdout.write('Quitting app!\n');
                 process.exit();
                 break;
             case '/sayhello':
@@ -21,8 +22,7 @@ process.stdin.on('readable', function() {
         };
     }
 });
-
-function getOSinfo() {
+/* function getOSinfo() {
     var type = os.type();
     if(type === 'Darwin') {
         type = 'OSX';
@@ -39,4 +39,4 @@ function getOSinfo() {
     console.log('Uptime: ~', (uptime / 60).toFixed(0), 'min');
     console.log('User name:', userInfo.username);
     console.log('Home dir:', userInfo.homedir);
-}
+} */

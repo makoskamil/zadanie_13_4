@@ -1,5 +1,5 @@
 var os = require('os');
-var timeTransform = require('./modules/TimeTransform');
+var timeTransform = require('./TimeTransform');
 
 
 function getOSinfo() {
@@ -16,7 +16,7 @@ function getOSinfo() {
     console.log('System:', type);
     console.log('Release:', release);
     console.log('CPU model:', cpu);
-    console.log('Uptime: ', : timeTransform.print();
+    console.log('Uptime: ', timeTransform.print(uptime));
     console.log('User name:', userInfo.username);
     console.log('Home dir:', userInfo.homedir);
 }

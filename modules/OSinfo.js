@@ -1,5 +1,5 @@
 var os = require('os');
-var timeTransform = require('./modules/TimeTransform');
+var timeTransform = require('./TimeTransform');
 
 
 function getOSinfo() {
